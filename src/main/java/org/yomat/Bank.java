@@ -7,13 +7,13 @@ import java.util.HashMap;
  * The Bank class is the representation of a bank managing accounts for its clients
  * Created by hb on 25/05/2016.
  */
-public class Bank {
+class Bank {
 
-    protected String name;
-    protected ArrayList<Client> clients;
-    protected ArrayList<Account> accounts;
-    protected HashMap<String, Client> clientsByName; // TODO <String, ArrayList<Client>>
-    protected HashMap<Client, ArrayList<Account>> accountsByClient; // TODO init in constructor
+    private String name;
+    private ArrayList<Client> clients;
+    private ArrayList<Account> accounts;
+    private HashMap<String, Client> clientsByName;
+    private HashMap<Client, ArrayList<Account>> accountsByClient;
 
     public Bank(String name) {
         this.name = name;
