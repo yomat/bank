@@ -59,7 +59,7 @@ public class TestAccount {
     }
 
     @Test
-    public void basicControls(){
+    public void testInitStructure(){
         // number of clients
         assertTrue( 2 == CA.getClients().size() );
         assertTrue( 2 == BP.getClients().size() );
