@@ -15,6 +15,14 @@ public class Bank {
     protected HashMap<String, Client> clientsByName; // TODO <String, ArrayList<Client>>
     protected HashMap<Client, ArrayList<Account>> accountsByClient; // TODO init in constructor
 
+    public Bank(String name) {
+        this.name = name;
+        clients = new ArrayList<>();
+        accounts = new ArrayList<>();
+        clientsByName = new HashMap<>();
+        accountsByClient = new HashMap<>();
+    }
+
     public String getName() {
         return name;
     }

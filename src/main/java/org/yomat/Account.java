@@ -18,7 +18,7 @@ public class Account {
         this.client = client;
         this.bank = bank;
         this.balance = balance;
-        number = client+"_"+bank+RandomGenerator.nextLong(9223372036854775807L);
+        number = client + "_" + bank + RandomGenerator.nextLong(9223372036854775807L);
         client.getAccounts().add(this);
     }
 
